@@ -1,0 +1,77 @@
+/* Navbar Styles */
+.custom-navbar {
+    padding: 0.8rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-right: 2rem;
+    color: #333 !important;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.2rem;
+    transition: all 0.2s ease;
+    /* //color: #333 !important; */
+    cursor: pointer;
+  }
+  
+  /* .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #0d6efd !important;
+    border-bottom: 2px solid #333;
+    border-radius: 0px;
+  } */
+  
+  /* Responsive Adjustments
+
+
+
+  /* Add these styles to your existing Navbar.css */
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.2rem;
+  transition: all 0.2s ease;
+}
+
+.nav-link.active {
+  /* color: #0d6efd !important; */
+  font-weight: 600;
+  border-bottom: 3px solid black;
+}
+
+.active-indicator {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: #black;
+  border-radius: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .nav-link {
+    padding: 0.5rem !important;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  
+  .active-indicator {
+    bottom: -3px;
+    width: 15px;
+  }
+}
