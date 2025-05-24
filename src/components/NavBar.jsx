@@ -28,9 +28,6 @@ const NavBar = () => {
                 onClick={() => dispatch(setRegion(region))}
               >
                 {region}
-                {currentRegion === region && (
-                  <span className="active-indicator"></span>
-                )}
               </Nav.Link>
             ))}
           </Nav>

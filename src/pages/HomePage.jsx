@@ -55,7 +55,6 @@ const HomePage = () => {
     fetchCountries();
   }, [dispatch]);
 
-  // Filter countries based on region
   const filteredCountries =
     region === "All"
       ? allCountries
@@ -92,7 +91,7 @@ const HomePage = () => {
                           variant="top"
                           src={country.flag}
                           alt={`Flag of ${country.name}`}
-                          loading="lazy" // Lazy load images
+                          loading="lazy" 
                         />
                       </Card>
                     </div>
@@ -116,7 +115,7 @@ const HomePage = () => {
                           variant="top"
                           src={country.flag}
                           alt={`Flag of ${country.name}`}
-                          loading="lazy" // Lazy load images
+                          loading="lazy" 
                         />
                       </div>
                       <Card.Body >
@@ -143,7 +142,6 @@ const HomePage = () => {
             </>
           )}
           {!loading && allCountries.length > 0 && (
-
             <>
             <SocialMediaButtons />
             <Footer />

@@ -66,7 +66,6 @@ const LoginPage = () => {
       [name]: type === "checkbox" ? checked : value,
     }));
 
-    // Clear error when user types
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: "" }));
     }
@@ -76,7 +75,6 @@ const LoginPage = () => {
     const { name } = e.target;
     setTouched((prev) => ({ ...prev, [name]: true }));
 
-    // Validate field on blur
     if (name === "usernameOrEmail") {
       setErrors((prev) => ({
         ...prev,
@@ -97,7 +95,6 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate all fields
     const isValid = validateForm();
     setTouched({
       usernameOrEmail: true,
@@ -105,7 +102,6 @@ const LoginPage = () => {
     });
 
     if (isValid) {
-      console.log("Form is valid, submitting...", formData);
       navigate("/home"); 
     }
   };

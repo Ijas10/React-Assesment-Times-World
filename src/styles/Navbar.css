@@ -32,17 +32,6 @@
   border-bottom: 3px solid black;
 }
 
-.active-indicator {
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 3px;
-  background-color: black;
-  border-radius: 3px;
-}
-
 @media (max-width: 992px) {
   .nav-link {
     padding: 0.5rem !important;
