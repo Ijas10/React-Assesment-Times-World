@@ -10,7 +10,7 @@ import {
 import LoginPage from "./pages/LoginPage";
 import HomePage from "./pages/HomePage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css"; // Import your global CSS here
+import "./App.css"; 
 function App() {
   return (
     <Provider store={store}>

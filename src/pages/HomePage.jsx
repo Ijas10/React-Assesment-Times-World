@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   Container,
   Row,
@@ -14,7 +14,6 @@ import { useSelector, useDispatch } from "react-redux";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {
-  setRegion,
   loadMore,
   setCountries,
   setLoading,
@@ -62,7 +61,6 @@ const HomePage = () => {
       ? allCountries
       : allCountries.filter((country) => country.region === region);
 
-  // Slice to get currently visible countries
   const visibleCountries = filteredCountries.slice(0, visibleCount);
   const hasMore = visibleCount < filteredCountries.length;
   let limitedCountries = visibleCountries.slice(0, 6);

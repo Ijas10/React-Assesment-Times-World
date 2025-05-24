@@ -1,10 +1,8 @@
-/* Base styles */
 .signin-container {
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 20px;
-  /* background-color: #f8f9fa; */
   width: 100%;
   font-family: "Noto Sans", sans-serif;
 }
@@ -12,7 +10,6 @@
 .signin-card {
   border: none;
   border-radius: 8px;
-  /* //box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
   padding: 40px;
   background-color: #ffffff;
 }
@@ -22,7 +19,6 @@
 }
 
 
-/* Title styles */
 .signin-title {
   font-size: 32px;
   font-weight: 700;
@@ -31,7 +27,6 @@
   text-align: left;
 }
 
-/* New user text */
 .new-user-text {
   text-align: left;
   margin-bottom: 30px;
@@ -51,7 +46,6 @@
   font-weight: 500;
 }
 
-/* Form inputs */
 .input-label {
   font-size: 14px;
   color: #495057;
@@ -71,7 +65,7 @@
 .signin-input::placeholder {
   color: #3e3e3e;
   font-weight: 600;
-  opacity: 1; /* Ensures full opacity for placeholder */
+  opacity: 1; 
 }
 
 .signin-input:focus {
@@ -84,7 +78,6 @@
   align-items: center;
 }
 
-/* Checkbox styles */
 .keep-signed-in .form-check-input {
   width: 30px;
   height: 30px;
@@ -101,7 +94,6 @@
   margin-left: 10px;
 }
 
-/* Sign in button */
 .signin-button {
   height: 48px;
   font-size: 16px;
@@ -116,7 +108,6 @@
   background-color: #0b5ed7;
 }
 
-/* Divider styles */
 .signin-card .divider-container {
   display: flex;
   align-items: center;
@@ -154,14 +145,6 @@
   width: 40%;
 }
 
-
-
-/* .disabledCursor {
-  cursor:not-allowed !important;
-  pointer-events: none !important;
-} */
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .signin-card {
     padding: 30px 20px;

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, Container, Button, Offcanvas } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import "../styles/Navbar.css"
 import { useDispatch,useSelector } from 'react-redux';
 import { setRegion } from '../store/regionFilterSlice';

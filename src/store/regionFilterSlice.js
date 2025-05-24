@@ -2,8 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   region: 'All',
-  visibleCount: 12, // Number of countries to show initially
-  allCountries: [], // Store all fetched countries
+  visibleCount: 12, 
+  allCountries: [], 
   loading: false,
   error: null
 };
@@ -14,7 +14,7 @@ export const regionFilterSlice = createSlice({
   reducers: {
     setRegion: (state, action) => {
       state.region = action.payload;
-      state.visibleCount = 12; // Reset to first page when region changes
+      state.visibleCount = 12; 
     },
     loadMore: (state) => {
       state.visibleCount += 12;
